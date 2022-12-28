@@ -1,0 +1,27 @@
+mode: "dev"
+port: 8000
+start_time: "2020-07-01"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "./log/web_app.log"
+  max_size: 1000
+  max_age: 3600
+  max_backups: 5
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "123456"
+  db: "web_app"
+  max_open_conns: 100
+  max_idle_conns: 20
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  db: 0
+  pool_size: 20
+
